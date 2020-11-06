@@ -26,11 +26,15 @@ def chapter(cid:int):
     if int(cid) < len(chpt) + 1:
         # it was a valid chapter id
         t = ""
-        for c in chpt:
+        for i, c in enumerate(chpt):
             if c[1] == int(cid):
+                if i + 1 < len(chpt):
+                    next_chapter = chpt[i + 1]
+                else:
+                    next_chapter = chpt[i]
                 # set the title of the page as the title of the chapter
                 t = c[0]
-                return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c)
+                return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter)
     return url_for('error404')
 
 

@@ -4,4 +4,5 @@
 <h1>{{ post[0] }}</h1>
 <p class=clarification>{{ post[2] }} minutes / {{ post[3] }}</p>
 {% block post %}{% endblock post %}
+<p>Next chapter: <a href="{{ url_for('chapter', cid=next_chapter[1]) }}">{{ next_chapter[0] }}</a></p>
 {% endblock main %}
