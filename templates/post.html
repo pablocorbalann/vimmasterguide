@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>{{ post[0] }}</h1>
+<p class=clarification>{{ post[2] }} minutes / {{ post[3] }}</p><br>
+{% block post %}{% endblock post %}
+{% endblock main %}

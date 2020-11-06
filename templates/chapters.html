@@ -4,7 +4,7 @@
 <h1>Index</h1>
 <ol>
   {% for chapter in chapters %}
-  <li class="v-li"><p>{{ chapter[0] }}</p></li>
+  <li class="v-li"><a class="chapter-a" href="{{ url_for('chapter', cid=chapter[1]) }}"><p>{{ chapter[1] }}. {{ chapter[0] }}</p></a></li>
   {% endfor %}
 </ol>
 {% endblock main %}

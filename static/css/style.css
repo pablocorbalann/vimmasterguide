@@ -232,6 +232,11 @@ header.header .title {
   color: #22292f;
 }
 
+/*======================= CHAPTERS STYLES ======================== */
+.chapter-a {
+  color: #8f8f8f !important;
+}
+
 /*--HORIZONTALLY RESPONSIVE--*/
 
 @media only screen and (max-width: 1052px) {
