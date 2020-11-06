@@ -4,21 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VMG - Vim Master Guide</title>
 	<meta name="description" content="The complete Vim master guide, learn Vim free.">
-	<link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Rafa Gómez Casas | Cofundador de Codely">
 </head>
 <body>
 	<header class="header">
     <div class="container">
-        <a href="index.html" class="title font-mono">VMG/CHAPTERS<span class="blinking">/</span></a>
+      <a href="{{ url_for('index') }}" class="title font-mono">{{ bar }}<span class="blinking">/</span></a>
     </div>
     <div class="container">
         <nav id="sections">
             <ul>
                 <li>
-                    <a href="chapters.html">Chapters</a>
+                  <a href="{{ url_for('chapters') }}">Chapters</a>
                 </li>
                 <li>
                     <a href="https://github.com/PabloCorbCon/vmg" target="_blank">Source</a>
@@ -29,6 +28,10 @@
 </header>
   <div id="page">
     <div class="container">
+      <main class="medium">
+        {% block main %}
+        {% endblock main %}
+      </main>
     </div>
   </div>
 </body>

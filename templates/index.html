@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Vim Master Guide</h1>
+<p>
+Hi, and wellcome to the complete Vim master guide <span class="clarification">(VMG)</span>. In this guide you will learn everything about the <a href="https://www.vim.org" target="_blank">Vim</a> text editor.
+</p>
+<p>
+You will learn from the most basic things in Vim, for example mouseless movement, the workflow to more complex things, how to develop your own plugins using Vim-script.
+</p>
+<p>
+So, what are you waiting? Check <a href="{{ url_for('chapters') }}">the chapters</a> of the book or <a href="chapter/1.html">start reading</a> now for free!
+</p>
+<p class="clarification">
+This digital book has been created by <a href="http://github.com/PabloCorbCon" target="_blank">@pablocorbcon</a> in it's GitHub profile under the MIT <a href="{{ url_for('license') }}">license</a>.
+</p>
+{% endblock main %}
