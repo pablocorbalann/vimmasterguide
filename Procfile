@@ -1,1 +1,1 @@
-web gunicorn application:app
+web: gunicorn -b :$8080 app:app
