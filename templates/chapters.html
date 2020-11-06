@@ -2,4 +2,9 @@
 
 {% block main %}
 <h1>Index</h1>
+<ol>
+  {% for chapter in chapters %}
+  <li class="v-li"><p>{{ chapter[0] }}</p></li>
+  {% endfor %}
+</ol>
 {% endblock main %}

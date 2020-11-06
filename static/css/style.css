@@ -16,6 +16,7 @@ li {
   padding: 0;
   display: inline-block;
 }
+.v-li {display:block;}
 
 a {
   text-decoration: none !important;
