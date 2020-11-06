@@ -1,35 +1,16 @@
-<!DOCTYPE html>
-<html lang="en-EN">
-<head>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="The complete Vim master guide, learn Vim free.">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">	
-  <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
-  {% if title %}
-  <title>VMG · {{ title }}</title>
-  {% else %}
-  <title>VMG</title>
-  {% endif %}
-</head>
-<body>
-	<header class="header">
-    <div class="container">
-      <a href="{{ url_for('index') }}" class="title font-mono">{{ bar }}<span class="blinking">/</span></a>
-    </div>
-    <div class="container">
-        <nav id="sections">
-            <ul>
-                <li>
-                  <a href="{{ url_for('chapters') }}">Chapters</a>
-                </li>
-                <li>
-                    <a href="https://github.com/PabloCorbCon/vmg" target="_blank">Source</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+{% extends "main.html" %}
+
+{% block body %}
+<header class="header">
+  <div class="container"><a href="{{ url_for('index') }}" class="title font-mono">{{ bar }}<span class="blinking">/</span></a></div>
+  <div class="container">
+    <nav id="sections">
+      <ul>
+         <li><a href="{{ url_for('chapters') }}">Chapters</a></li>
+         <li><a href="https://github.com/PabloCorbCon/vmg" target="_blank">Source</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
   <div id="page">
     <div class="container">
@@ -41,3 +22,4 @@
   </div>
 </body>
 </html>
+{% endblock body %}

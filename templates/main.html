@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="The complete Vim master guide, learn Vim free.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">	
+  <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+  {% if title %}
+  <title>VMG · {{ title }}</title>
+  {% else %}
+  <title>VMG</title>
+  {% endif %}
+</head>
+<body>
+  {% block body %}{% endblock body %}
+</body>
+</html>
+
