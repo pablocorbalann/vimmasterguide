@@ -41,4 +41,4 @@ def e404(err=None):
     return '<h1>404</h1>', 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, port=8080)
