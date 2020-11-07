@@ -71,6 +71,13 @@ pre {
   overflow-x: auto;
 }
 
+code {
+  background-color: #cccecf;
+  padding: 5px 10px 5px 10px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 3px;
+  border-radius: 3px;
+}
 .container {
   max-width: 1040px;
   margin: 0 auto;
