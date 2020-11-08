@@ -2,6 +2,7 @@
 
 The **V**im **M**aster **G**uide, or _VMG_ is a free, digital book Which I have created so that all the people who can learn Vim, from simple things like installing Vim, to more complex things as vim script. So enjoy it.
 
+##### Read the [CONTRIBUTING.md](https://github.com/PabloCorbCon/vmg/blob/main/CONTRIBUTING.md) file if you  want to contribute to this project.
 ---
 
 #### Running the web in a custom server
