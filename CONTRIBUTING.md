@@ -53,8 +53,8 @@ pip install -r requirements.txt
 ```
 * Make your contribution.
 * Commit your changes.
-* Push the changes.
+* Push the changes **to the dev branch**
 
-**Remember that the repository is configured to automatically deploy the server from the** `main` **branch, so check that the code you write does not break anything.**
+**Remember that the repository is configured to automatically deploy the server from the** `main` **branch, so check that the code you write does not break anything once an administrator pulls the dev branch.**
 Remember to follow the pull request template when creating the pull request itself.
 ###### NOTE: It will be a good idea to follow the [conventional commits](https://conventionalcommits.org) standard in your pull request.
