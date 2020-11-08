@@ -1,5 +1,26 @@
 {% extends "post.html" %}
 
 {% block post %}
-<code>sudo apt upgrade && sudo apt install vim</code>
-{% endblock post %}
+<p>Ok, so you have decided that you want to start using Vim, as we said in <a href="{{ url_for('chapter', cid=1) }}">the first chapter</a> of this guide, one of the characteristics of Vim is that it can run almost in every system, in fact it's normally pre-installed in almost all Unix systems. In this chapter we will cover how to install Vim in all those systems, so let's begin!</p>
+<hr>
+<h2>Linux</h2>
+<h3>Installing in Ubuntu / Debian</h3>
+<p>The easiest way of installing Vim in Ubuntu based distributions or in Debian is using <a href="https://en.wikipedia.org/wiki/APT_(software)">Apt</a></p>
+<code>sudo apt-get update && sudo apt-get install vim</code>
+<h3>Installing in Arch based distributions</h3>
+<p>If you need more information about installing Vim in arch linux, you can check <a target="_blank" href="https://wiki.archlinux.org/index.php/vim">this article</a> of the Arch wiki page.</p>
+<p>You should first update pacman using <code>pacman -Syy</code> and then install vim using: <code>pacman -S vim</code></p>
+<h3>Installing Vim in fedora based distributions</h3>
+<p>To install Vim in Fedora based distributions, we will use <a href="https://fedoraproject.org/wiki/DNF">dnf</a>, So before installing anything, let's update dnf:</p>
+<code>sudo dnf update</code>
+<p>Then, type the following command:</p>
+<code>sudo dnf install vim-enhanced</code>
+<hr>
+<h2>Installing from source</h2>
+<p>You can install Vim from <a target="_blank" href="https://github.com/vim/vim">it's GitHub repository</a>, simply clone the repository into your local computer</p>
+<code>git clone https://github.com/vim/vim.git</code>
+<p>Please, check the repository itself for more information about it.</p>
+<hr>
+<h3>Windows</h3>
+<p>To install Vim in Windows, please check <a target="_blank" href="https://www.vim.org/download.php#pc">the offitial</a> Vim page, there you'll find all the executables for installing Vim in Windows.</p>
+<hr>{% endblock post %}
