@@ -15,11 +15,11 @@ def index():
 
 @app.route('/c')
 def chapters():
-    return render_template('chapters.html', title="Chapters", bar="c", chapters=chpt)
+    return render_template('chapters.html', title="Chapters", bar="c", chapters=chpt, d="The chapter index for the VMG book!")
 
 @app.route('/license')
 def license():
-    return render_template('license.html', title="License", bar="license")
+    return render_template('license.html', title="License", bar="license", d="Read the license of the VMG book!")
 
 @app.route('/c/<cid>')
 def chapter(cid:int):
@@ -34,7 +34,7 @@ def chapter(cid:int):
                     next_chapter = chpt[i]
                 # set the title of the page as the title of the chapter
                 t = c[0]
-                return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter)
+                return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter, d=t)
     return url_for('error404')
 
 
