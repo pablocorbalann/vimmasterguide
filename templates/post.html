@@ -2,7 +2,11 @@
 
 {% block main %}
 <h1>{{ post[0] }}</h1>
-<p class=clarification>{{ post[2] }} minutes / {{ post[3] }}</p>
+{% if post[2] != 1%}
+  <p class=clarification>{{ post[2] }} minutes / {{ post[3] }}</p>
+{% else %}
+  <p class="clarification">{{ post[2] }} minute / {{ post[3] }}</p>
+{% endif %}
 {% block post %}{% endblock post %}
 <p>Next chapter: <a href="{{ url_for('chapter', cid=next_chapter[1]) }}">{{ next_chapter[0] }}</a></p>
 {% endblock main %}

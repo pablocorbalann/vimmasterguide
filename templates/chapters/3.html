@@ -1,1 +1,12 @@
-This chapter is still in development and will be published as soon as possible.
+{% extends "post.html" %}
+
+{% block post %}
+<p>Perfect, you have managed to install Vim on your computer. Now what? what you have to do?. Using Vim is simpler than it seems, first open a command console on your device. To open a command console in Windows use <span class="clarification">Ctrl+R+"cmd"+Enter</span>. In Linux you can use <span class="clarification">Ctrl+T</span> and in Mac simply type <span>Command+Spc+"Terminal"</span>.</p>
+<p>Opening Vim is super simple, you just have to type:</p>
+<code>vim</code>
+<p>To exit vim, type <span class="clarification">:q</span> in your editor.</p>
+<p>Let's imagine that we have a file called <span class="clarification">hamlet.txt</span>, to open this file you can move inside the directory of the file itself and then type:</p>
+<code>vim hamlet.txt</code>
+<p>You will see the file, however you will not be able to write in it (at least now, we will explain how to write in the next chapter)</p>
+<p>Now, type <span class="clarification">:q</span> to exit the Vim text editor</p>
+{% endblock post %}
