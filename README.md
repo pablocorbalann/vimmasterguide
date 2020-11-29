@@ -7,10 +7,10 @@ The **V**im **M**aster **G**uide, or _VMG_ is a free, digital book Which I have 
 
 #### Running the web in a custom server
 If you want to run the web in a custom server, you should follow this steps.
-##### Prequisites
+##### Prerequisites
 * Python (v3.8+) installed.
 * Git installed and configured
-* pip (v3) instaled
+* pip (v3) installed
 ##### Steps
 ###### Clone the repository in your local machine
 ```shell
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
-###### If you have multiple Python instalations use Python 3
+###### If you have multiple Python installations use Python 3
 ```
 python3 app.py
 ```
