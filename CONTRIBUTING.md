@@ -4,7 +4,7 @@ So you want to contribute to VMG? Perfect, for everything to go well you have to
 ### Internal structure of the chapters
 The chapters of the book are inside a `json` file, called `chapters.json`. The file contains a list of lists with all the chapters. The structure of the chapters is the following:
 ```
-[<name of the chapter => str>, <id => int>, <minutes => int>, <dificulty => str>] 
+[<name of the chapter => str>, <id => int>, <minutes => int>, <difficulty => str>] 
 ```
 So for example, the 3rd chapter called `This is my chapter` has a duration of 5 minutes and is easy to read and understand, the structure of this chapter will be:
 ```json
@@ -19,7 +19,7 @@ With that said, let's look at an example of the actual file with 2 chapters:
 ```
 
 The project is designed to load the HTML document corresponding to each chapter. All the chapter related documents are stored inside [this](https://github.com/PabloCorbCon/vmg/tree/main/templates/chapters) folder. Each document has the name of the chapter ID.
-For example, the chapter `["How to install Vim", 2, 3, "easy"]` is asigned to the document `2.html`
+For example, the chapter `["How to install Vim", 2, 3, "easy"]` is assigned to the document `2.html`
 
 There should be the **same number of chapters in the** `chapters.json` **file than in the folder with all the HTML documents**.
 
@@ -46,7 +46,7 @@ git clone https://github.com/<your name>/vmg
 ```shell
 cd vmg
 ```
-* Activate the enviroment.
+* Activate the environment.
 * Install the requirements
 ```shell
 pip install -r requirements.txt
