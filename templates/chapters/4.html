@@ -4,8 +4,24 @@
 <p>As we have said before, in the Vim text editor we do not have a mouse, the things that you would normally do with the mouse in any other text editor you cannot do.</p>
 <p>To add grace to the matter, in a terminal (where we normally run Vim) we don't have any kind of button or anything like that. All the possible icons that we see are made with text.</p>
 <p>This is why we have modes in Vim, as we cannot do everything we would normally do with a keyboard and a mouse with just a keyboard, we have to divide the editor into modes (or layers), so that the same keys have functions different</p>
-<h2>The modes</h2>
+<hr>
 <h3>Normal mode</h3>
-<p>If you open a file in Vim, as we explained in <a href="{{ url_for('chapter', cid=3) }}">the third chapter</a>, you'll notice that you can't write anything in the file. If you press keys you will end up being able to write, even though you don't really know how you did it.</p>
-<h1>CHAPTER STILL IN DEVELOPMENT</h1>
+<p>If you open a file in Vim, as we explained in <a href="{{ url_for('chapter', cid=3) }}">the third chapter</a>, you'll notice that you can't write anything in the file.</p>
+<p>If you press keys you will end up being able to write, even though you don't really know how you did it.</p>
+<p>This happens because when starting Vim, the default mode is normal mode or command mode. This mode is used to view the file we want to open, move through it, and execute Vim commands.</p>
+<p>In <a href="{{ url_for('chapter', cid=5) }}">the next chapter</a> we will explain how to move inside a file in Vim, but for the moment you can move the cursor in the file using the arrows on your keyboard.</p>
+<p>To change modes, we have to use the keys on our keyboard.</p>
+<hr>
+<h3>Insert mode</h3>
+<p>We use insert mode to write text to a file.</p>
+<p>To enter insert mode press the <span class='clarification'>"i"</span> key from normal mode</p>
+<p>You will see that you can now type with the cursor as you normally do.</p>
+<p>You can check the current mode you are in by reading the text in the bar at the bottom left of your terminal. In insert mode, this bar will say something like <span class="clarification">"--INSERT--"</span></p>
+<p>To return to normal mode, from where you can execute commands, use the escape key, if you press it twice quickly, you will return to normal mode faster.</p>
+<p>To save the changes to a file in Vim, enter the command bar and type <span class="clarification">w</span>, that is <span class="clarification">:w</span></p>
+<p>At the end of <a href="{{ url_for('chapter', cid=3) }}">chapter 3</a> we already explained how to exit Vim, but we will expand on that information. Use <span class="clarification">:q</span> to exit Vim.</p>
+<p>If you want to exit saving changes to the file, use <span class="clarification">:w</span> and then <span class="clarification">:q</span>.</p>
+<p>To avoid having to type two different commands, you can simplify this in <span class="clarification">:wq</span></p>
+<p>Y si quieres salir de Vim sin guardar los cambios, utiliza <span class="clarification">:q!</span>.</p>
+<hr>
 {% endblock post %}
