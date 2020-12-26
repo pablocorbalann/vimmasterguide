@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, redirect
 import json
+import os
 
 app = Flask(__name__)
 
@@ -11,7 +12,7 @@ print(chpt)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="Vim master guide", bar="VMG")
+    return render_template('index.html', title="Vim master guide", bar="vimmasterguide")
 
 @app.route('/c')
 def chapters():
@@ -20,6 +21,17 @@ def chapters():
 @app.route('/license')
 def license():
     return render_template('license.html', title="License", bar="license", d="Read the license of the VMG book!")
+
+@app.route('/u')
+def rperson():
+    return redirect(url_for('index'))
+
+@app.route('/u/<name>')
+def person(name:str):
+    persons = os.listdir('templates/people')
+    if name in [n[:-5] for n in persons]:
+        return render_template(f'people/{name}.html', title=name, bar=f'u/{name}')
+    return redirect(url_for('error404'))
 
 @app.route('/c/<cid>')
 def chapter(cid:int):
@@ -35,7 +47,7 @@ def chapter(cid:int):
                 # set the title of the page as the title of the chapter
                 t = c[0]
                 return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter, d=t)
-    return url_for('error404')
+    return redirect(url_for('error404'))
 
 
 @app.route('/e')
