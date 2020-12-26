@@ -31,7 +31,7 @@ def person(name:str):
     persons = os.listdir('templates/people')
     if name in [n[:-5] for n in persons]:
         return render_template(f'people/{name}.html', title=name, bar=f'u/{name}')
-    return redirect(url_for('error404'))
+    return redirect(url_for('error404')) 
 
 @app.route('/c/<cid>')
 def chapter(cid:int):

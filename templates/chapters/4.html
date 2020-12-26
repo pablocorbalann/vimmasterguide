@@ -22,6 +22,29 @@
 <p>At the end of <a href="{{ url_for('chapter', cid=3) }}">chapter 3</a> we already explained how to exit Vim, but we will expand on that information. Use <span class="clarification">:q</span> to exit Vim.</p>
 <p>If you want to exit saving changes to the file, use <span class="clarification">:w</span> and then <span class="clarification">:q</span>.</p>
 <p>To avoid having to type two different commands, you can simplify this in <span class="clarification">:wq</span></p>
-<p>Y si quieres salir de Vim sin guardar los cambios, utiliza <span class="clarification">:q!</span>.</p>
+<p>And if you want to exit Vim without saving the changes, use <span class="clarification">:q!</span>.</p>
 <hr>
+<h3>Visual mode</h3>
+<p>You can use the visual mode of vim for work with blocks of code at the same time<p>
+<p>There are three ways for entering the visual mode<p>
+<ol>
+  <li class="v-li chapter-a">Character mode (v)</li>
+  <li class="v-li chapter-a">Sentence mode (V)</li>
+  <li class="v-li chapter-a">Block mode (Ctrl + v)</li>
+<ol>
+<p>To select a code block, you must move with the keyboard in the same way that you move the cursor in normal mode, with the h, j, k and l keys.</p>
+<p>That will change the size of the selection in visual mode.</p>
+<p>You can also use other navigation commands, such as <span="clarification">w</span> to highlight to the beginning of the next word or <span class="clarification">$</span> to include the rest of the line.</p>
+<p>In the visual mode, you can press the <span class="clarification">d</span> key for deleting a chunk of code</p>
+<p>If you deleted too much or not enough, press <span class="clarification">u (from undo)</span> to undo and start again.</p>
+<p>You can also use the <p class="clarification">p</span> key for pasting this text in any other part of the document</p>
+<p>The <span class="clarification">c</span> key will allow you to enter insert mode, which will let you replace a chunk of code.</p>
+<p>As we have previously said, <span class="clarification">d</span> deletes the text chunk and copies it. <span class="clarification">y</span> is used to simply copy this text</p>
+<p>You can use the sentence mode and the keys <span class="clarification">></span> and <span class="clarification"><</span> for increasing the identation of the lines you have selected</p>
+<hr>
+<h3>Command mode</h3>
+<p>The command mode of the editor. It has multiple functions, in general it is used to execute vim script commands.</p>
+<p>We will see more information about Vim script in future chapters.</p>
+<p>Examples of commands in Vim script are <span class="clarification">:w</span> for saving the document, <span class="clarification">:q</span> for closing the document, <span class="clarification">:wq</span> for saving and closing or <span class="clarification">:q!</span> for closing without saving.</p>
+<p>You can also use <span class="clarification">:help</span> for reading the documentation about an specific command.</p>
 {% endblock post %}
