@@ -6,9 +6,8 @@ app = Flask(__name__)
 
 # load all the chapters
 chpt = [] 
-with open('chapters.json') as f:
+with open('data/chapters.json') as f:
     chpt = json.load(f)
-print(chpt)
 
 @app.route('/')
 def index():
