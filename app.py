@@ -28,7 +28,7 @@ def rperson():
 
 @app.route('/u/<name>')
 def person(name:str):
-    persons = os.listdir('templates/people')
+    persons = os.listdir('templates/u')
     if name in [n[:-5] for n in persons]:
         return render_template(f'people/{name}.html', title=name, bar=f'u/{name}')
     return redirect(url_for('error404')) 
@@ -46,7 +46,7 @@ def chapter(cid:int):
                     next_chapter = chpt[i]
                 # set the title of the page as the title of the chapter
                 t = c[0]
-                return render_template(f'chapters/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter, d=t)
+                return render_template(f'c/{cid}.html', title=t, bar=f"c/{cid}", post=c, next_chapter=next_chapter, d=t)
     return redirect(url_for('error404'))
 
 

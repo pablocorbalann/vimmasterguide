@@ -2,12 +2,13 @@
 
 {% block body %}
 <header class="header">
-  <div class="container"><a href="{{ url_for('index') }}" class="title font-mono">{{ bar }}<span class="blinking">/</span></a></div>
+  <div class="container"><a href="{{ url_for('index') }}" class="title font-mono">/{{ bar }}<span class="blinking">/</span></a></div>
   <div class="container">
     <nav id="sections">
       <ul>
          <li><a href="{{ url_for('chapters') }}">Chapters</a></li>
          <li><a href="https://github.com/pblcc/vmg" target="_blank">Source</a></li>
+         <li><a href="{{ url_for('person', name='pablocorbcon') }}">About me</a></li>
       </ul>
     </nav>
   </div>
