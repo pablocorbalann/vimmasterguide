@@ -3,5 +3,6 @@
   ["How to install Vim", 2, 3, "easy"],
   ["How to open and exit Vim", 3, 1, "easy"],
   ["The modes of Vim", 4, 4, "easy"],
-  ["More special keys", 5, 3, "easy"]
+  ["More special keys", 5, 1, "easy"],
+  [":vs and :hs", 6, 1, "easy"]
 ]

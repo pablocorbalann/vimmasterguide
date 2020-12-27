@@ -1,0 +1,14 @@
+{% extends "post.html" %}
+
+{% block post %}
+<p>There are two really usefull commands you need to know.</p>
+<code>:vs</code>
+<p>and</p>
+<code>:hs</code>
+<p><span class="clarification">:vs (vertical split)</span> is used to open a file in another window (but inside the same terminal). It will open the file vertically.</p>
+<p><span class="clarification">:hs</span> does the same thing, but it splits the new file horizontally.</p>
+<p>For using <span class="clarification">:vs</span> or <span class="clarification">:hs</span> type:</p>
+<code>:vs / :hs route-to-the-file</code>
+<p>For example:</p>
+<code>:hs templates/index.html</code>
+{% endblock post %}
