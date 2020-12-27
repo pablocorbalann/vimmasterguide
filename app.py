@@ -29,7 +29,7 @@ def rperson():
 def person(name:str):
     persons = os.listdir('templates/u')
     if name in [n[:-5] for n in persons]:
-        return render_template(f'people/{name}.html', title=name, bar=f'u/{name}')
+        return render_template(f'u/{name}.html', title=name, bar=f'u/{name}')
     return redirect(url_for('error404')) 
 
 @app.route('/c/<cid>')

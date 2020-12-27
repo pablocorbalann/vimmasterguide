@@ -2,65 +2,74 @@
 body, ul, ol, li, p {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 body {
   padding-bottom: 1rem;
   line-height: 30px;
   font-style: normal;
-  color: #3d4852; }
+  color: #3d4852;
+}
 
 li {
   padding: 0;
-  display: inline-block; }
-
-.v-li {
-  display: block; }
+  display: inline-block;
+}
+.v-li {display:block;}
 
 a {
   text-decoration: none !important;
-  color: inherit; }
+  color: inherit;
+}
+a:hover {text-decoration: underline;}
 
-a:hover {
-  text-decoration: underline; }
-
-/*======================= COMMON STYLES FOR EVERYTHING ===================*/
+/*======================= COMMON STYLES FOR EVERYTHING ===================*/ 
 p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  text-align: justify !important; }
+  text-align:justify !important;
+}
 
 .clarification {
   font-size: 1rem;
-  font-style: italic; }
+  font-style: italic;
+}
 
 strong {
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
 h1, h2, h3, h4, h5 {
   color: #22292f;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 h1 {
   font-size: 1.5rem;
   font-weight: 800;
-  margin: 0 0 .5em 0; }
+  margin: 0 0 .5em 0;
+}
 
 h3 {
   font-size: 1.125rem;
-  margin: 0; }
+  margin: 0;
+}
+
 
 pre {
   font: 400 15px/24px monospace;
   margin: 0 0 5% 0;
   padding: 15px 20px;
-  overflow-x: auto; }
+  overflow-x: auto;
+}
 
 code {
   background-color: #cccecf;
@@ -68,43 +77,43 @@ code {
   margin: 10px 0px 10px 0px;
   border-radius: 3px;
   border-radius: 3px;
-  display: block; }
-
+  display: block;
+}
 .container {
   max-width: 1040px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-.medium {
-  max-width: 44rem; }
+.medium {max-width: 44rem;}
 
 /*======================= BLINK ANIMATION =======================*/
-.blinking {
-  animation: blinker 1.2s linear infinite; }
-
+.blinking {animation: blinker 1.2s linear infinite;}
 @keyframes blinker {
-  0% {
-    opacity: 100; }
-  49% {
-    opacity: 100; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
+  0% { opacity: 100;}
+  49% { opacity: 100;}
+  50% { opacity: 0;}
+  100% { opacity: 0;}
+}
+
 /*============================== SOME BASIC FONTS ====================*/
 .font-sans,
 body {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important; }
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important
+}
 
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif !important; }
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif !important
+}
 
 .font-mono,
 p code {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important; }
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important
+}
 
 /*====================== HEADER ======================*/
 header.header {
-  padding-top: 1.7rem; }
+  padding-top: 1.7rem;
+}
 
 header.header .title {
   display: inline-block;
@@ -114,69 +123,86 @@ header.header .title {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
   font-size: 2.3rem;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #social {
   display: inline-block;
   vertical-align: baseline;
-  float: right; }
+  float: right
+}
 
 #social li {
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 0.8em; }
+  margin-right: .8em
+}
 
 #social li:last-child {
-  margin-right: 0; }
+  margin-right: 0
+}
 
 #social a {
   font-size: 2.1875rem;
-  text-decoration: none; }
+  text-decoration: none
+}
 
 #social a:hover {
-  opacity: .9; }
+  opacity: .9;
+}
 
 #sections {
   text-transform: uppercase;
   margin-top: .5rem;
   font-size: .8rem;
   font-weight: 600;
-  display: inline-block; }
+  display: inline-block;
+}
 
 #sections li {
   margin-right: 2rem;
-  opacity: .7; }
+  opacity: .7;
+}
 
 #sections li:last-child {
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 #sections li:hover,
 #sections .active {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #sections a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /*============================= THE MENU INSIDE THE HEADER =======================*/
+
 #menu {
   margin: 1px 0;
-  display: inline-block; }
+  display: inline-block;
+}
 
 #menu a {
   margin-left: 15px;
   font-size: 13px;
   text-transform: uppercase;
-  color: #999; }
+  color: #999;
+}
 
 #menu a:hover {
-  color: #212121; }
+  color: #212121;
+}
 
 #menu a.current {
-  color: #212121; }
+  color: #212121;
+}
 
 /* WEBKIT FIX :( */
 ::-webkit-input-placeholder {
-  line-height: 16px; }
+  line-height: 16px;
+}
 
 #search-form button, #search-box button {
   right: 0;
@@ -185,57 +211,73 @@ header.header .title {
   opacity: .5;
   display: inline-block;
   position: absolute;
+
   -webkit-transition: padding-right .15s ease-out;
   -moz-transition: padding-right .15s ease-out;
   -o-transition: padding-right .15s ease-out;
-  transition: padding-right .15s ease-out; }
+  transition: padding-right .15s ease-out;
+}
 
 #search-form button:hover, #search-box button:hover {
   opacity: .85;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 #search-form:hover button, #search-box:hover button {
-  padding-right: 18px; }
+  padding-right: 18px;
+}
 
 /*========================= THE PAGE ELEMENT =======================*/
+
 #page {
   margin-top: 2rem;
   position: relative;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 #page a {
   font-weight: 700;
   text-decoration: underline;
-  color: #22292f; }
+  color: #22292f;
+}
 
 /*======================= CHAPTERS STYLES ======================== */
 .chapter-a {
-  color: #8f8f8f !important; }
+  color: #8f8f8f !important;
+}
 
 /*--HORIZONTALLY RESPONSIVE--*/
+
 @media only screen and (max-width: 1052px) {
+
   /*--PAGE--*/
   #page {
-    padding: 0; }
+    padding: 0;
+  }
 
   #sections li {
-    margin-right: .3rem; }
+    margin-right: .3rem;
+  }
 
   .medium {
-    padding: 0 1rem; }
+    padding: 0 1rem;
+  }
 
   .header {
-    text-align: center; }
+    text-align: center;
+  }
 
   #social {
     width: 100%;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
 
   #sections {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
 
   /*--WRAPPER--*/
   .wrapper:first-child {
-    padding-top: 7.5%; } }
-
-/*# sourceMappingURL=style.css.map */
+    padding-top: 7.5%;
+  }
+}
